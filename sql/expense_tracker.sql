@@ -4,7 +4,6 @@ USE expense_tracker;
 
 CREATE TABLE IF NOT EXISTS transactions (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
     transaction_date DATE NOT NULL,
     type ENUM('income', 'expense') NOT NULL,
     category VARCHAR(255) NOT NULL,
